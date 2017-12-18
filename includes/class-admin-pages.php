@@ -20,6 +20,7 @@ class adminClass {
 		add_submenu_page( 'edit.php?post_type=page', 'World and News', 'World and News', 'manage_options', 'world-and-news-page', __CLASS__ .'::world_and_news_posts' );
 	}
 
+	// callback for sports-page
 	function sports_posts(){
 		//The Query
 		$query = new WP_Query( array( 'category_name' => 'sports-page', 'post_per_page' => '25' ) );
@@ -39,6 +40,7 @@ class adminClass {
 			}
 	}
 
+	// callback for animals-page
 	function animals_posts(){
 		//The Query
 		$query = new WP_Query( array( 'category_name' => 'animals-page', 'post_per_page' => '10' ) );
@@ -58,6 +60,7 @@ class adminClass {
 			}
 	}
 
+	// callback for business-page
 	function business_posts(){
 		//The Query
 		$query = new WP_Query( array( 'category_name' => 'business-page', 'post_per_page' => '12' ) );
@@ -77,6 +80,7 @@ class adminClass {
 			}
 	}
 
+	// callback for entertainment-page
 	function entertainment_posts(){
 		//The Query
 		$query = new WP_Query( array( 'category_name' => 'entertainment-page', 'post_per_page' => '50' ) );
@@ -96,6 +100,7 @@ class adminClass {
 			}
 	}
 
+	// callback for world and news-page
 	function world_and_news_posts(){
 		//The Query
 		$query = new WP_Query( array( 'category_name' => 'world-and-news-page', 'post_per_page' => '100' ) );
